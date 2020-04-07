@@ -1,0 +1,29 @@
+name: Survey Marketplace Install, Test and Build
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.17.0]
+
+    steps:
+      - name: Checkout Use Node.js ${{ matrix.node-version}}
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Install
+        run: |
+          yarn install
+      - name: Test
+        run: |
+          yarn test 
