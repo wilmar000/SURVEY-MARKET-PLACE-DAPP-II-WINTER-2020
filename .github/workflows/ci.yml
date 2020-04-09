@@ -44,7 +44,7 @@ jobs:
       - name: Predeploy
         run: |
           yarn
-          yarn build
+          yarn predeploy
       
       - name: Install SSH Client
         uses: webfactory/ssh-agent@v0.2.0
