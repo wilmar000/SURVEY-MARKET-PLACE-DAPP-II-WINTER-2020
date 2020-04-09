@@ -8,5 +8,10 @@
 $ ssh-keygen -t rsa -b 4096 -C "youremailhere@example.com" -N ""
 ```
 
+## SSH private key format
+If the private key is not in the PEM format, you will see an `Error loading key "(stdin)": invalid format message`.
+
+Use `ssh-keygen -p -f path/to/your/key -m pem` to convert your key file to PEM, but be sure to make a backup of the file first. 
+
 - Public key (extension with `.pub`) ()
 - Private key   (deployment secret)
