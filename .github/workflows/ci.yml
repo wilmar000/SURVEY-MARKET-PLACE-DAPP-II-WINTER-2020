@@ -35,7 +35,7 @@ jobs:
     
     if: github.ref == 'refs/head/master'
     steps:
-      - name: Checkout use Node.js ${{ matric.node-version}}
+      - name: Checkout use Node.js ${{ matrix.node-version}}
         uses: actions/checkout@v2
         with:
           persist-credential: false
