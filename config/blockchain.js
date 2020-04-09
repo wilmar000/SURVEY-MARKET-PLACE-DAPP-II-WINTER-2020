@@ -8,10 +8,16 @@ module.exports = {
   },
 
   development: {
-    client: 'ganache-cli',
+    client: "ganache-cli",
     clientConfig: {
-      miningMode: 'dev' // Mode in which the node mines. Options: dev, auto, always, off
-    }
+      miningMode: "dev" // Mode in which the node mines. Options: dev, auto, always, off
+    },
+    // accounts: {
+    //   mnemonic: process.env.MNEMONIC,
+    //   numAddresses: 10,
+    //   hdpath: "m/44'/60'/0'/0/",
+    //   balance : "10 ether"
+    // }
   },
 
   privatenet: {
@@ -27,7 +33,7 @@ module.exports = {
     ],
     clientConfig: {
       datadir: ".embark/privatenet/datadir", // Data directory for the databases and keystore
-      miningMode: 'auto',
+      miningMode: "auto",
       genesisBlock: "config/privatenet/genesis.json" // Genesis block to initiate on first creation of a development node
     }
   },
@@ -36,7 +42,7 @@ module.exports = {
     client: "parity",
     genesisBlock: "config/privatenet/genesis-parity.json",
     datadir: ".embark/privatenet/datadir",
-    miningMode: 'off'
+    miningMode: "off"
   },
 
   externalnode: {
@@ -51,12 +57,20 @@ module.exports = {
   },
 
   testnet: {
-    networkType: "testnet", // Can be: testnet(ropsten), rinkeby, livenet or custom, in which case, it will use the specified networkId
-    syncMode: "light",
+    // networkType: "testnet", // Can be: testnet(ropsten), rinkeby, livenet or custom, in which case, it will use the specified networkId
+    // syncMode: "light",
+    // accounts: [
+    //   {
+    //     nodeAccounts: true,
+    //     password: "config/testnet/password"
+    //   }
+    // ]
+    endpoint: "https://ropsten.infura.io/v3/" + process.env.ROPSTEN_INFURA_KEY,
     accounts: [
       {
-        nodeAccounts: true,
-        password: "config/testnet/password"
+        mnemonic: process.env.MNEMONIC,
+        numAddresses: 10,
+        hdpath: "m/44'/60'/0'/0/",
       }
     ]
   },

@@ -8,7 +8,6 @@ module.exports = {
       "ws://localhost:8546",
       "http://localhost:8545"
     ],
-
     // Automatically call `ethereum.enable` if true.
     // If false, the following code must run before sending any transaction: `await EmbarkJS.enableEthereum();`
     // Default value is true.
@@ -33,7 +32,7 @@ module.exports = {
       SimpleStorage: {
         fromIndex: 0,
         args: [100],
-        deploy:false
+        deploy:true
       },
       Survey : {
         fromIndex: 0,

@@ -1,11 +1,12 @@
 {
-  "name": "embark_demo",
+  "name": "survey-market-place-dapp-ii-winter-2020",
   "version": "5.2.3",
-  "description": "Demo DApp for Embark",
-  "homepage": "https://github.com/embarklabs/embark/tree/master/dapps/templates/demo#readme",
-  "bugs": "https://github.com/embarklabs/embark/issues",
+  "description": "Survey marketplace for survey creators",
+  "homepage": "https://georgebrowncollege-toronto.github.io/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020",
   "scripts": {
-    "test": "embark test"
+    "test": "embark test",
+    "predeploy": "embark build",
+    "deploy":"gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,7 @@
   "repository": {
     "directory": "dapps/templates/demo",
     "type": "git",
-    "url": "https://github.com/embarklabs/embark.git"
+    "url": "https://github.com/georgebrowncollege-toronto/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020.git"
   },
   "devDependencies": {
     "bootstrap": "4.3.1",
