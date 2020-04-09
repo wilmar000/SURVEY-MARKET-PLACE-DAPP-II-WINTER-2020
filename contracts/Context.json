@@ -1,0 +1,28 @@
+{
+  "abiDefinition": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "className": "Context",
+  "args": [],
+  "gas": "auto",
+  "silent": false,
+  "track": true,
+  "deploy": false,
+  "realRuntimeBytecode": "",
+  "realArgs": [],
+  "code": "",
+  "runtimeBytecode": "",
+  "linkReferences": {},
+  "swarmHash": "",
+  "gasEstimates": null,
+  "functionHashes": {},
+  "filename": "/Users/dhruvinparikh/gbc_tut/dapp-II/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/.embark/contracts/Context.sol",
+  "originalFilename": "contracts/Context.sol",
+  "path": "/Users/dhruvinparikh/gbc_tut/dapp-II/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/contracts/Context.sol",
+  "type": "file",
+  "deploymentAccount": "0xB8D851486d1C953e31A44374ACa11151D49B8bb3"
+}
