@@ -76,9 +76,9 @@
     "renounceOwnership()": "715018a6",
     "transferOwnership(address)": "f2fde38b"
   },
-  "filename": "/Users/dhruvinparikh/gbc_tut/dapp-II/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/.embark/contracts/Ownable.sol",
+  "filename": "/home/runner/work/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/.embark/contracts/Ownable.sol",
   "originalFilename": "contracts/Ownable.sol",
-  "path": "/Users/dhruvinparikh/gbc_tut/dapp-II/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/contracts/Ownable.sol",
+  "path": "/home/runner/work/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/SURVEY-MARKET-PLACE-DAPP-II-WINTER-2020/contracts/Ownable.sol",
   "type": "file",
   "deploymentAccount": "0xB8D851486d1C953e31A44374ACa11151D49B8bb3"
 }
