@@ -12,12 +12,14 @@ module.exports = {
     clientConfig: {
       miningMode: "dev" // Mode in which the node mines. Options: dev, auto, always, off
     },
-    // accounts: {
-    //   mnemonic: process.env.MNEMONIC,
-    //   numAddresses: 10,
-    //   hdpath: "m/44'/60'/0'/0/",
-    //   balance : "10 ether"
-    // }
+    accounts: [
+      {
+        mnemonic: process.env.MNEMONIC,
+        numAddresses: "10",
+        hdpath: "m/44'/60'/0'/0/",
+        balance: "10 ether"
+      }
+    ]
   },
 
   privatenet: {
@@ -70,7 +72,7 @@ module.exports = {
       {
         mnemonic: process.env.MNEMONIC,
         numAddresses: 10,
-        hdpath: "m/44'/60'/0'/0/",
+        hdpath: "m/44'/60'/0'/0/"
       }
     ]
   },

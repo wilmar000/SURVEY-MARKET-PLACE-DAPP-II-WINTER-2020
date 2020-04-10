@@ -5,9 +5,9 @@ import classnames from 'classnames';
 
 import EmbarkJS from 'Embark/EmbarkJS';
 import Blockchain from './components/blockchain';
-import Whisper from './components/whisper';
-import Storage from './components/storage';
-import ENS from './components/ens';
+// import Whisper from './components/whisper';
+// import Storage from './components/storage';
+// import ENS from './components/ens';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './dapp.css';
@@ -79,35 +79,35 @@ class App extends React.Component {
             {this._renderStatus('Blockchain', this.state.blockchainEnabled)}
           </NavLink>
         </NavItem>
-        <NavItem>
+        {/* <NavItem>
           <NavLink onClick={() => this.handleSelect('2')} className={classnames({ active: this.state.activeKey === '2' })}>
             {this._renderStatus('Decentralized Storage', this.state.storageEnabled)}
           </NavLink>
-        </NavItem>
-        <NavItem>
+        </NavItem> */}
+        {/* <NavItem>
           <NavLink onClick={() => this.handleSelect('3')} className={classnames({ active: this.state.activeKey === '3' })}>
             {this._renderStatus('P2P communication (Whisper)', this.state.whisperEnabled)}
           </NavLink>
-        </NavItem>
-        <NavItem>
+        </NavItem> */}
+        {/* <NavItem>
           <NavLink onClick={() => this.handleSelect('4')} className={classnames({ active: this.state.activeKey === '4' })}>
             {this._renderStatus('Naming (ENS)', ensEnabled)}
           </NavLink>
-        </NavItem>
+        </NavItem> */}
       </Nav>
       <TabContent activeTab={this.state.activeKey}>
         <TabPane tabId="1">
           <Blockchain/>
         </TabPane>
-        <TabPane tabId="2">
+        {/* <TabPane tabId="2">
           <Storage enabled={this.state.storageEnabled}/>
-        </TabPane>
-        <TabPane tabId="3">
+        </TabPane> */}
+        {/* <TabPane tabId="3">
           <Whisper enabled={this.state.whisperEnabled}/>
-        </TabPane>
-        <TabPane tabId="4">
+        </TabPane> */}
+        {/* <TabPane tabId="4">
           <ENS enabled={ensEnabled}/>
-        </TabPane>
+        </TabPane> */}
       </TabContent>
     </div>);
   }
